@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=VK Music
+Exec=qmlscene $@ Main.qml
+Icon=VKMusic.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+

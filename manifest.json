@@ -1,0 +1,15 @@
+{
+    "name": "vkmusic.turan-mahmudov-l",
+    "description": "A music application for Ubuntu Touch",
+    "architecture": "all",
+    "title": "VK Music",
+    "hooks": {
+        "VkMusic": {
+            "apparmor": "VkMusic.apparmor",
+            "desktop": "VkMusic.desktop"
+        }
+    },
+    "version": "0.2",
+    "maintainer": "Turan Mahmudov <turan.mahmudov@gmail.com>",
+    "framework": "ubuntu-sdk-14.10"
+}

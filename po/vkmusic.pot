@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-06-11 00:08+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ui/LoginPage.qml:10
+msgid "Login"
+msgstr ""
+
+#: ui/LoginPage.qml:59
+msgid "Connection Error"
+msgstr ""
+
+#: ui/LoginPage.qml:59
+msgid ""
+"Unable to authenticate to VK. Check your connection and firewall settings."
+msgstr ""
+
+#: ui/LoginPage.qml:84
+msgid "Loading web page..."
+msgstr ""
+
+#: ui/LoginPage.qml:85
+msgid "Success!"
+msgstr ""
+
+#: Main.qml:60 Main.qml:746 components/Search.qml:28
+msgid "Search"
+msgstr ""
+
+#: Main.qml:68
+msgid "Sign out"
+msgstr ""
+
+#: Main.qml:159 Main.qml:691
+msgid "Now playing"
+msgstr ""
+
+#: Main.qml:177 Main.qml:199 Main.qml:220 Main.qml:711
+msgid "Queue"
+msgstr ""
+
+#: Main.qml:358 Main.qml:417 components/Playlists.qml:25
+msgid "Create playlist"
+msgstr ""
+
+#: Main.qml:434
+msgid "Name:"
+msgstr ""
+
+#: Main.qml:447
+msgid "Cancel"
+msgstr ""
+
+#: Main.qml:454
+msgid "Create"
+msgstr ""
+
+#: Main.qml:470
+msgid "An error occured"
+msgstr ""
+
+#: Main.qml:473 Main.qml:511
+msgid "Close"
+msgstr ""
+
+#: Main.qml:606
+msgid "My tracks"
+msgstr ""
+
+#: Main.qml:620
+msgid "Popular"
+msgstr ""
+
+#: Main.qml:634
+msgid "Playlists"
+msgstr ""
+
+#: Main.qml:648
+msgid "Downloads"
+msgstr ""
+
+#: Main.qml:675
+msgid "About"
+msgstr ""
+
+#: components/NowPlaying.qml:241
+msgid "Library"
+msgstr ""
+
+#: components/MyTracks.qml:83 components/PopularSongs.qml:78
+#: components/Playlist.qml:90
+msgid "Load more"
+msgstr ""
+
+#: components/Walkthrough/Slide4.qml:56
+msgid "Build Playlists"
+msgstr ""
+
+#: components/Walkthrough/Slide4.qml:70
+msgid ""
+"Make playlists on the go. Put together the perfect playlist for any "
+"situation right from your phone."
+msgstr ""
+
+#: components/Walkthrough/Slide3.qml:56
+msgid "Find Your Songs"
+msgstr ""
+
+#: components/Walkthrough/Slide3.qml:70
+msgid ""
+"Adding songs to your Library builds a quick-list of just the tunes you love "
+"the most."
+msgstr ""
+
+#: components/Walkthrough/Slide5.qml:56
+msgid "Download"
+msgstr ""
+
+#: components/Walkthrough/Slide5.qml:70
+msgid ""
+"Download VK songs to your phone and play on your favorite music player any "
+"time you want."
+msgstr ""
+
+#: components/Walkthrough/Slide5.qml:84
+msgid "Start"
+msgstr ""
+
+#: components/Walkthrough/Walkthrough.qml:67
+msgid "Skip"
+msgstr ""
+
+#: components/Walkthrough/Slide1.qml:59
+msgid "VK Music"
+msgstr ""
+
+#: components/Walkthrough/Slide1.qml:74
+msgid "Take a tour or skip to browse now."
+msgstr ""
+
+#: components/Walkthrough/Slide2.qml:56
+msgid "Search and Play"
+msgstr ""
+
+#: components/Walkthrough/Slide2.qml:70
+msgid ""
+"Search for any song or artist and play just the songs you want. It's all up "
+"to you."
+msgstr ""
+
+#: components/About.qml:69
+msgid "Version "
+msgstr ""
+
+#: components/About.qml:85
+msgid "Released under the terms of the GNU GPL v3"
+msgstr ""
+
+#: components/About.qml:111
+msgid "The app is <b>not</b> provided by VK."
+msgstr ""
+
+#: components/About.qml:130
+msgid "Buy <b>VK Music Pro</b> to donate me."
+msgstr ""
