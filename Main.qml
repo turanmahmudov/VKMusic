@@ -81,9 +81,11 @@ MainView {
             is_logged = true;
             pagestack.clear();
             pagestack.push(tabs);
+
             popularpage.get_popular();
             mytrackspage.get_tracks();
             playlistspage.get_playlists();
+            friendspage.get_friends();
 
         } else {
             pagestack.push(Qt.resolvedUrl("ui/LoginPage.qml"));
@@ -645,6 +647,20 @@ MainView {
         }
 
         Tab {
+            title: i18n.tr("Friends")
+            page: Page {
+                id: friendsPage
+                head.actions: [searchAction, logoutAction]
+
+                Friends {
+                    id: friendspage
+                    anchors.fill:parent
+                    anchors.bottomMargin: common_bmrgn
+                }
+            }
+        }
+
+        Tab {
             title: i18n.tr("Downloads")
             page: Page {
                 id: downloadsPage
@@ -759,6 +775,19 @@ MainView {
 
         Playlist {
             id:playlistpage
+            anchors.fill:parent
+            anchors.bottomMargin: common_bmrgn
+        }
+    }
+
+    Page {
+        id: friendSongsPage
+        title: i18n.tr("Friend")
+        head.actions: [searchAction, logoutAction]
+        visible: false
+
+        FriendSongs {
+            id:friendsongspage
             anchors.fill:parent
             anchors.bottomMargin: common_bmrgn
         }

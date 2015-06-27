@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-11 00:08+0500\n"
+"POT-Creation-Date: 2015-06-27 15:27+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgstr ""
 msgid "Success!"
 msgstr ""
 
-#: Main.qml:60 Main.qml:746 components/Search.qml:28
+#: Main.qml:60 Main.qml:762 components/Search.qml:28
 msgid "Search"
 msgstr ""
 
@@ -46,64 +46,72 @@ msgstr ""
 msgid "Sign out"
 msgstr ""
 
-#: Main.qml:159 Main.qml:691
+#: Main.qml:161 Main.qml:707
 msgid "Now playing"
 msgstr ""
 
-#: Main.qml:177 Main.qml:199 Main.qml:220 Main.qml:711
+#: Main.qml:179 Main.qml:201 Main.qml:222 Main.qml:727
 msgid "Queue"
 msgstr ""
 
-#: Main.qml:358 Main.qml:417 components/Playlists.qml:25
+#: Main.qml:360 Main.qml:419 components/Playlists.qml:25
 msgid "Create playlist"
 msgstr ""
 
-#: Main.qml:434
+#: Main.qml:436
 msgid "Name:"
 msgstr ""
 
-#: Main.qml:447
+#: Main.qml:449
 msgid "Cancel"
 msgstr ""
 
-#: Main.qml:454
+#: Main.qml:456
 msgid "Create"
 msgstr ""
 
-#: Main.qml:470
+#: Main.qml:472
 msgid "An error occured"
 msgstr ""
 
-#: Main.qml:473 Main.qml:511
+#: Main.qml:475 Main.qml:513
 msgid "Close"
 msgstr ""
 
-#: Main.qml:606
+#: Main.qml:608
 msgid "My tracks"
 msgstr ""
 
-#: Main.qml:620
+#: Main.qml:622
 msgid "Popular"
 msgstr ""
 
-#: Main.qml:634
+#: Main.qml:636
 msgid "Playlists"
 msgstr ""
 
-#: Main.qml:648
+#: Main.qml:650
+msgid "Friends"
+msgstr ""
+
+#: Main.qml:664
 msgid "Downloads"
 msgstr ""
 
-#: Main.qml:675
+#: Main.qml:691
 msgid "About"
+msgstr ""
+
+#: Main.qml:785
+msgid "Friend"
 msgstr ""
 
 #: components/NowPlaying.qml:241
 msgid "Library"
 msgstr ""
 
-#: components/MyTracks.qml:83 components/PopularSongs.qml:78
-#: components/Playlist.qml:90
+#: components/MyTracks.qml:83 components/FriendSongs.qml:80
+#: components/PopularSongs.qml:78 components/Playlist.qml:90
 msgid "Load more"
 msgstr ""
 

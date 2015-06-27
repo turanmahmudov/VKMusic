@@ -105,6 +105,12 @@ function my_tracks(offset) {
             var results = JSON.parse(xhr.responseText);
             //console.log(xhr.responseText)
 
+            if (results['error']) {
+                if (results['error']['error_code'] == '5') {
+                    relogin();
+                }
+            }
+
             var j;
             for (j in results) {
                 if (j == 'response') {
@@ -132,6 +138,88 @@ function my_tracks(offset) {
 
     // send the collected data as JSON
     xhr.send('need_user=0&offset='+offset+'&count=100&v=5.33&access_token='+getKey('access_token'));
+}
+
+function friend_tracks(user_id, offset) {
+    if (offset == 0) { friendSongsModel.clear(); }
+    friendSongs.status = 0;
+
+    if (offset > 0) { friendSongsModel.remove(friendSongsModel.count-1); }
+
+    var url = 'https://api.vk.com/method/audio.get';
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', url, true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4)
+            // Must be edit
+            var results = JSON.parse(xhr.responseText);
+            //console.log(xhr.responseText)
+
+            var j;
+            for (j in results) {
+                if (j == 'response') {
+                    var ii = 0;
+                    for (var i = 0; i < objLength(results[j]['items']); i++) {
+                        var id = results[j]['items'][i]['id'];
+                        var artistName = results[j]['items'][i]['artist'];
+                        var songName = results[j]['items'][i]['title'];
+                        var songURL = results[j]['items'][i]['url'];
+                        var lyrics_id = results[j]['items'][i]['lyrics_id'];
+                        var genre = results[j]['items'][i]['genre_id'];
+                        var owner_id = results[j]['items'][i]['owner_id'];
+                        var songImage = "";
+                        friendSongsModel.append({"title":songName, "artist":artistName, "id":id, "ii":ii, "songImage":songImage, "songURL":songURL, "lyrics_id":lyrics_id, "genre":genre, "owner_id":owner_id});
+                        ii++;
+                    }
+                }
+            }
+
+            if (friendSongsModel.count > offset) { friendSongsModel.append({"off":"1"}); }
+
+            friendSongs.status = 1;
+        };
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+    // send the collected data as JSON
+    xhr.send('owner_id='+user_id+'&need_user=0&offset='+offset+'&count=100&v=5.33&access_token='+getKey('access_token'));
+}
+
+function get_friends() {
+    friendsList.status = 0;
+
+    var url = 'https://api.vk.com/method/friends.get';
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', url, true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4)
+            // Must be edit
+            var results = JSON.parse(xhr.responseText);
+            //console.log(xhr.responseText)
+
+            var j;
+            for (j in results) {
+                if (j == 'response') {
+                    var ii = 0;
+                    for (var i = 0; i < objLength(results[j]['items']); i++) {
+                        var id = results[j]['items'][i]['id'];
+                        var first_name = results[j]['items'][i]['first_name'];
+                        var last_name = results[j]['items'][i]['last_name'];
+                        var nickname = results[j]['items'][i]['nickname'];
+                        var photo = results[j]['items'][i]['photo'];
+                        friendsModel.append({"name":first_name + ' ' + last_name, "nickname":nickname, "photo":photo, "id":id, "ii":ii});
+                        ii++;
+                    }
+                }
+            }
+
+            friendsList.status = 1;
+        };
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+    // send the collected data as JSON
+    xhr.send('fields=uid,nickname,photo&offset=0&count=100&v=5.33&access_token='+getKey('access_token'));
 }
 
 function searchTracks(query) {
@@ -485,6 +573,12 @@ function delete_song(id, owner_id) {
 }
 
 function logout() {
+    deleteKey('access_token');
+    deleteKey('user_id');
+    home();
+}
+
+function relogin() {
     deleteKey('access_token');
     deleteKey('user_id');
     home();
