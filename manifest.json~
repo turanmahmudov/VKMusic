@@ -9,7 +9,7 @@
             "desktop": "VkMusic.desktop"
         }
     },
-    "version": "0.5",
+    "version": "0.4",
     "maintainer": "Turan Mahmudov <turan.mahmudov@gmail.com>",
     "framework": "ubuntu-sdk-14.10"
 }

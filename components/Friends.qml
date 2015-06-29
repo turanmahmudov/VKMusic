@@ -55,6 +55,7 @@ Item {
                 }
             }
             onClicked: {
+                friendsongspage.offset = 0;
                 friendsongspage.userid = id;
                 friendsongspage.get_friend_tracks(id);
                 friendSongsPage.title = name;
