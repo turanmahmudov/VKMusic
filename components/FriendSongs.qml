@@ -97,7 +97,10 @@ Item {
         }
         PullToRefresh {
             refreshing: friendSongsModel.count == 0 && friendSongs.status == 0
-            onRefresh: get_friend_tracks(userid)
+            onRefresh: {
+                offset = 0
+                get_friend_tracks(userid)
+            }
         }
     }
 

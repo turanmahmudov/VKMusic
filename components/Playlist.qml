@@ -97,7 +97,10 @@ Item {
         }
         PullToRefresh {
             refreshing: playlistsongsModel.count == 0 && playlistsongs.status == false
-            onRefresh: playlist(playlist_id)
+            onRefresh: {
+                offset = 0;
+                playlist(playlist_id)
+            }
         }
     }
 

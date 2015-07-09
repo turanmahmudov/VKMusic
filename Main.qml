@@ -765,6 +765,7 @@ MainView {
         Search {
             id: searchpage
             anchors.fill: parent
+            anchors.bottomMargin: common_bmrgn
         }
     }
 

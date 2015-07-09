@@ -95,7 +95,10 @@ Item {
         }
         PullToRefresh {
             refreshing: popularSongsModel.count == 0 && popularSongsList.status == 0
-            onRefresh: get_popular()
+            onRefresh: {
+                offset = 0;
+                get_popular()
+            }
         }
     }
 

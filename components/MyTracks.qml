@@ -100,7 +100,10 @@ Item {
         }
         PullToRefresh {
             refreshing: myTracksModel.count == 0 && myTracksList.status == 0
-            onRefresh: get_tracks()
+            onRefresh: {
+                offset = 0;
+                get_tracks()
+            }
         }
     }
 

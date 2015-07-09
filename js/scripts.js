@@ -370,6 +370,7 @@ function addToLibrary(id, owner_id) {
             activityItem.opacity = 0;
                 var results = JSON.parse(xhr.responseText);
 
+                mytrackspage.offset = 0;
                 mytrackspage.get_tracks();
         }
     };
