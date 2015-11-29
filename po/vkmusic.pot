@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-05 13:48+0500\n"
+"POT-Creation-Date: 2015-11-17 06:09+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,71 +38,71 @@ msgstr ""
 msgid "Success!"
 msgstr ""
 
-#: Main.qml:60 Main.qml:762 components/Search.qml:28
+#: Main.qml:57 Main.qml:759 components/Search.qml:28
 msgid "Search"
 msgstr ""
 
-#: Main.qml:68
+#: Main.qml:65
 msgid "Sign out"
 msgstr ""
 
-#: Main.qml:161 Main.qml:707
+#: Main.qml:158 Main.qml:704
 msgid "Now playing"
 msgstr ""
 
-#: Main.qml:179 Main.qml:201 Main.qml:222 Main.qml:727
+#: Main.qml:176 Main.qml:198 Main.qml:219 Main.qml:724
 msgid "Queue"
 msgstr ""
 
-#: Main.qml:360 Main.qml:419 components/Playlists.qml:25
+#: Main.qml:357 Main.qml:416 components/Playlists.qml:25
 msgid "Create playlist"
 msgstr ""
 
-#: Main.qml:436
+#: Main.qml:433
 msgid "Name:"
 msgstr ""
 
-#: Main.qml:449
+#: Main.qml:446
 msgid "Cancel"
 msgstr ""
 
-#: Main.qml:456
+#: Main.qml:453
 msgid "Create"
 msgstr ""
 
-#: Main.qml:472
+#: Main.qml:469
 msgid "An error occured"
 msgstr ""
 
-#: Main.qml:475 Main.qml:513
+#: Main.qml:472 Main.qml:510
 msgid "Close"
 msgstr ""
 
-#: Main.qml:608
+#: Main.qml:605
 msgid "My tracks"
 msgstr ""
 
-#: Main.qml:622
+#: Main.qml:619
 msgid "Popular"
 msgstr ""
 
-#: Main.qml:636
+#: Main.qml:633
 msgid "Playlists"
 msgstr ""
 
-#: Main.qml:650
+#: Main.qml:647
 msgid "Friends"
 msgstr ""
 
-#: Main.qml:664
+#: Main.qml:661
 msgid "Downloads"
 msgstr ""
 
-#: Main.qml:691
+#: Main.qml:688
 msgid "About"
 msgstr ""
 
-#: Main.qml:786
+#: Main.qml:783
 msgid "Friend"
 msgstr ""
 

@@ -1,0 +1,11 @@
+{
+    "policy_groups": [
+        "networking",
+        "webview",
+        "audio",
+        "content_exchange",
+        "content_exchange_source",
+        "connectivity"
+    ],
+    "policy_version": 1.2
+}

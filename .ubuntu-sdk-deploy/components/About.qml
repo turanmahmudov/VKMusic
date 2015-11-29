@@ -1,12 +1,12 @@
 import QtQuick 2.0
-import Ubuntu.Components 1.1
+import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.0 as ListItem
 import Ubuntu.Components.Popups 1.0
 
 Item {
     id: about
 
-    property string version : '0.2'
+    property string version : '0.7'
 
     Loader {
         id: view
